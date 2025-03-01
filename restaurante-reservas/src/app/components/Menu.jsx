@@ -2,11 +2,11 @@ import React from 'react';
 
 const Menu = ({ agregarAlCarrito }) => {
   const platillos = [
-    { id: 1, nombre: 'Platillo 1', precio: 10, imagen: 'https://via.placeholder.com/150' },
-    { id: 2, nombre: 'Platillo 2', precio: 15, imagen: 'https://via.placeholder.com/150' },
-    { id: 3, nombre: 'Platillo 3', precio: 20, imagen: 'https://via.placeholder.com/150' },
-    { id: 4, nombre: 'Platillo 4', precio: 25, imagen: 'https://via.placeholder.com/150' },
-    { id: 5, nombre: 'Platillo 5', precio: 30, imagen: 'https://via.placeholder.com/150' },
+    { id: 1, nombre: 'Tacos de Res', precio: 10, imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB4ciwBiKtbHZFX5GIURhwNVXBArHn7i_qWw&s' },
+    { id: 2, nombre: 'Mini Box', precio: 15, imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHNUQ8HTQ0lcwN2jOmPe_Bx2oqZK9fBeOVJg&s' },
+    { id: 3, nombre: 'Tipico Salvadoreño', precio: 20, imagen: 'https://www.cocinadelirante.com/sites/default/files/images/2024/04/recetas-economicas-y-saludables-para-todos-los-dias-de-la-semana.jpg' },
+    { id: 4, nombre: 'Pasta de la casa', precio: 25, imagen: 'https://cdn.colombia.com/sdi/2019/03/05/recetas-con-pasta-716227.jpg' },
+    { id: 5, nombre: 'Sopon', precio: 15, imagen: 'https://assets.unileversolutions.com/recipes-v2/243547.jpg' },
   ];
 
   return (
@@ -31,11 +31,12 @@ const Menu = ({ agregarAlCarrito }) => {
           gap: 20px;
         }
         .menu-item {
-          background: #fff;
+          background: #ffefd5;
           border-radius: 8px;
           overflow: hidden;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
           text-align: center;
+          border: 2px solid #d35400;
         }
         .menu-item-image {
           width: 100%;
@@ -47,20 +48,24 @@ const Menu = ({ agregarAlCarrito }) => {
         }
         .menu-item-details h3 {
           margin: 10px 0;
+          color: #000;
         }
         .menu-item-details p {
           margin: 5px 0;
+          color: #000;
+          font-weight: bold;
         }
         .btn {
-          background-color: #007bff;
+          background-color: #e67e22;
           color: white;
           border: none;
           padding: 10px 20px;
           cursor: pointer;
           border-radius: 4px;
+          font-weight: bold;
         }
         .btn:hover {
-          background-color: #0056b3;
+          background-color: #d35400;
         }
       `}</style>
     </div>
